@@ -3,7 +3,7 @@
 module.exports = {
 	async up(queryInterface, Sequelize) {
 		await queryInterface.createTable(
-			"Mahasiswas",
+			"DailyReports",
 			{
 				id: {
 					allowNull: false,
@@ -11,31 +11,14 @@ module.exports = {
 					primaryKey: true,
 					type: Sequelize.INTEGER,
 				},
-				idMhs: {
-					type: Sequelize.INTEGER,
-				},
-				nim: {
-					type: Sequelize.INTEGER,
-				},
-				nama: {
+        id_student: {
+          type: Sequelize.INTEGER,
+          allowNull: false,
+        },
+				description: {
 					type: Sequelize.STRING,
 				},
-				email: {
-					type: Sequelize.STRING,
-				},
-				password: {
-					type: Sequelize.STRING,
-				},
-				jurusan: {
-					type: Sequelize.STRING,
-				},
-				instansi: {
-					type: Sequelize.STRING,
-				},
-				startDate: {
-					type: Sequelize.DATE,
-				},
-				endDate: {
+				time_submitted: {
 					type: Sequelize.DATE,
 				},
 				createdAt: {
@@ -47,8 +30,8 @@ module.exports = {
 					type: Sequelize.DATE,
 				},
 				deletedAt: {
-					allowNull: true,
 					type: Sequelize.DATE,
+					allowNull: true,
 				},
 			},
 			{
@@ -57,7 +40,7 @@ module.exports = {
 		);
 	},
 	async down(queryInterface, Sequelize) {
-		await queryInterface.dropTable("Mahasiswas");
+		await queryInterface.dropTable("DailyReports");
 	},
 };
 

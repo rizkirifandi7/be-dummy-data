@@ -3,7 +3,7 @@
 module.exports = {
 	async up(queryInterface, Sequelize) {
 		await queryInterface.createTable(
-			"Administrasis",
+			"Students",
 			{
 				id: {
 					allowNull: false,
@@ -11,17 +11,35 @@ module.exports = {
 					primaryKey: true,
 					type: Sequelize.INTEGER,
 				},
-				idAdmin: {
+				id_account: {
 					type: Sequelize.INTEGER,
+					allowNull: false,
 				},
-				nama: {
+				nim: {
+					type: Sequelize.INTEGER,
+					allowNull: false,
+				},
+				job_title: {
 					type: Sequelize.STRING,
 				},
-				email: {
+				major: {
 					type: Sequelize.STRING,
 				},
-				password: {
+				institution: {
 					type: Sequelize.STRING,
+				},
+				laboratory: {
+					type: Sequelize.STRING,
+				},
+				status: {
+					type: Sequelize.ENUM("active", "inactive", "graduated"),
+					allowNull: false,
+				},
+				start_periode: {
+					type: Sequelize.DATE,
+				},
+				end_periode: {
+					type: Sequelize.DATE,
 				},
 				createdAt: {
 					allowNull: false,
@@ -32,17 +50,17 @@ module.exports = {
 					type: Sequelize.DATE,
 				},
 				deletedAt: {
-					allowNull: true,
 					type: Sequelize.DATE,
+					allowNull: true,
 				},
 			},
 			{
-				paranoid: true,
+				pararanoid: true,
 			}
 		);
 	},
 	async down(queryInterface, Sequelize) {
-		await queryInterface.dropTable("Administrasis");
+		await queryInterface.dropTable("Students");
 	},
 };
 

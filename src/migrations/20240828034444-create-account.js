@@ -3,13 +3,16 @@
 module.exports = {
 	async up(queryInterface, Sequelize) {
 		await queryInterface.createTable(
-			"Akuns",
+			"Accounts",
 			{
 				id: {
 					allowNull: false,
 					autoIncrement: true,
 					primaryKey: true,
 					type: Sequelize.INTEGER,
+				},
+				name: {
+					type: Sequelize.STRING,
 				},
 				email: {
 					type: Sequelize.STRING,
@@ -18,7 +21,8 @@ module.exports = {
 					type: Sequelize.STRING,
 				},
 				role: {
-					type: Sequelize.ENUM("admin", "mahasiswa", "manajemen"),
+					type: Sequelize.ENUM("admin", "student", "manajement"),
+					allowNull: false,
 				},
 				createdAt: {
 					allowNull: false,
@@ -29,17 +33,17 @@ module.exports = {
 					type: Sequelize.DATE,
 				},
 				deletedAt: {
-					allowNull: true,
 					type: Sequelize.DATE,
+					allowNull: true,
 				},
 			},
 			{
-				paranoid: true,
+				pararanoid: true,
 			}
 		);
 	},
 	async down(queryInterface, Sequelize) {
-		await queryInterface.dropTable("Akuns");
+		await queryInterface.dropTable("Accounts");
 	},
 };
 

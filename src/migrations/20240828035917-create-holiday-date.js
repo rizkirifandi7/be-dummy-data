@@ -3,7 +3,7 @@
 module.exports = {
 	async up(queryInterface, Sequelize) {
 		await queryInterface.createTable(
-			"Laporan_harians",
+			"HolidayDates",
 			{
 				id: {
 					allowNull: false,
@@ -11,11 +11,11 @@ module.exports = {
 					primaryKey: true,
 					type: Sequelize.INTEGER,
 				},
-				deskripsi: {
-					type: Sequelize.STRING,
-				},
-				waktuSubmit: {
+				date: {
 					type: Sequelize.DATE,
+				},
+				description: {
+					type: Sequelize.STRING,
 				},
 				createdAt: {
 					allowNull: false,
@@ -25,6 +25,10 @@ module.exports = {
 					allowNull: false,
 					type: Sequelize.DATE,
 				},
+				deletedAt: {
+					type: Sequelize.DATE,
+					allowNull: true,
+				},
 			},
 			{
 				paranoid: true,
@@ -32,7 +36,6 @@ module.exports = {
 		);
 	},
 	async down(queryInterface, Sequelize) {
-		await queryInterface.dropTable("Laporan_harians");
+		await queryInterface.dropTable("HolidayDates");
 	},
 };
-
