@@ -20,13 +20,8 @@ app.register(Cors, {
 // Register the Cookie plugin
 app.register(Cookie);
 
-// Define a route
-app.get("/", async (request, reply) => {
-	return { hello: "world" };
-});
-
 // Register the mahasiswa route
-app.register(require("./src/routes/mahasiswaRoute"), { prefix: "/api" });
+app.register(require("./src/routes/accountRoute"), { prefix: "/api" });
 
 // Start the server
 app.listen({ port: Port }, function (err, address) {
