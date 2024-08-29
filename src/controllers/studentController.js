@@ -1,18 +1,82 @@
-const { Mahasiswa } = require("../models");
+const { Student } = require("../models");
 
-const getAllData = async (req, res) => {
+const getAllStudent = async (req, reply) => {
 	try {
-		const mahasiswa = await Mahasiswa.findAll();
-		res.code(200).send({
-			data: mahasiswa,
+		const student = await Student.findAll();
+		reply.code(200).send({
+			data: student,
 		});
 	} catch (error) {
-		res.code(500).send({
+		reply.code(500).send({
 			message: error.message,
 		});
 	}
 };
 
+const getStudentById = async (req, reply) => {
+	try {
+		const student = await Student.findByPk(req.params.id);
+		reply.code(200).send({
+			data: student,
+		});
+	} catch (error) {
+		reply.code(500).send({
+			message: error.message,
+		});
+	}
+}
+
+const createStudent = async (req, reply) => {
+	try {
+		const student = await Student.create(req.body);
+		reply.code(201).send({
+			data: student,
+		});
+	} catch (error) {
+		reply.code(500).send({
+			message: error.message,
+		});
+	}
+}
+
+const updateStudent = async (req, reply) => {
+	try {
+		const student = await Student.update(req.body, {
+			where: {
+				id: req.params.id,
+			},
+		});
+		reply.code(200).send({
+			data: student,
+		});
+	} catch (error) {
+		reply.code(500).send({
+			message: error.message,
+		});
+	}
+}
+
+const deleteStudent = async (req, reply) => {
+	try {
+		const student = await Student.destroy({
+			where: {
+				id: req.params.id,
+			},
+		});
+		reply.code(200).send({
+			data: student,
+		});
+	} catch (error) {
+		reply.code(500).send({
+			message: error.message,
+		});
+	}
+}
+
 module.exports = {
-	getAllData,
+	getAllStudent,
+	getStudentById,
+	createStudent,
+	updateStudent,
+	deleteStudent,
 };

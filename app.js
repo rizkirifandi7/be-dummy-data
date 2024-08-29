@@ -26,7 +26,10 @@ app.get("/", async (request, reply) => {
 });
 
 // Register the mahasiswa route
-app.register(require("./src/routes/mahasiswaRoute"), { prefix: "/api" });
+app.register(require("./src/routes/studentRoute"), { prefix: "/api" });
+
+// Register the dailyReport route
+app.register(require("./src/routes/dailyReportRoute"), { prefix: "/api" });
 
 // Start the server
 app.listen({ port: Port }, function (err, address) {
