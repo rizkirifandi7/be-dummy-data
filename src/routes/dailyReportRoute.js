@@ -1,15 +1,17 @@
-const dailyReportController = require("../controllers/dailyReportController");
+const {
+	getAllDailyReports,
+	getDailyReportById,
+	createDailyReport,
+	updateDailyReport,
+	deleteDailyReport,
+} = require("../controllers/dailyReportController");
 
-async function dailyReportRoutes(fastify, options){
-    fastify.get("/dailyreport", dailyReportController.getAllDailyReport);
-    fastify.get("/dailyreport/:id", dailyReportController.getDailyReportById);
-    fastify.get("/dailyreport/student/:id", dailyReportController.getDailyReportByStudentId);
-    fastify.post("/dailyreport", dailyReportController.createDailyReport);
-    fastify.put("/dailyreport/:id", dailyReportController.updateDailyReport);
-    fastify.delete("/dailyreport/:id", dailyReportController.deleteDailyReport);
-    fastify.post("/dailyreport/student/", dailyReportController.createDailyReportByStudentId);
-    fastify.put("/dailyreport/student/:id", dailyReportController.updateDailyReportByStudentId);
-    fastify.delete("/dailyreport/student/:id", dailyReportController.deleteDailyReportByStudentId);
-}
+const dailyReportRoute = async (fastify, options) => {
+	fastify.get("/dailyreports", getAllDailyReports);
+	fastify.get("/dailyreports/:id", getDailyReportById);
+	fastify.post("/dailyreports", createDailyReport);
+	fastify.put("/dailyreports/:id", updateDailyReport);
+	fastify.delete("/dailyreports/:id", deleteDailyReport);
+};
 
-module.exports = dailyReportRoutes;
+module.exports = dailyReportRoute;

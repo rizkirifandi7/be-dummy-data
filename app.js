@@ -1,13 +1,21 @@
 const Fastify = require("fastify");
 const Cors = require("@fastify/cors");
 const Cookie = require("@fastify/cookie");
-const dotenv = require("dotenv");
-dotenv.config();
-
-const Port = process.env.PORT || 3000;
+const Swagger = require("@fastify/swagger");
+const SwaggerUI = require("@fastify/swagger-ui");
+const SwaggerOptions = require("./src/utils/swaggerConfig");
+const routes = require("./src/routes");
+const Dotenv = require("dotenv");
+Dotenv.config();
+const Port = process.env.PORT || 8000;
 
 // Create a Fastify instance
-const app = Fastify({ logger: true });
+const app = Fastify({
+	logger: {
+		level: "info",
+		file: "./src/logger/log.txt",
+	},
+});
 
 // Register the CORS plugin
 app.register(Cors, {
@@ -20,16 +28,12 @@ app.register(Cors, {
 // Register the Cookie plugin
 app.register(Cookie);
 
-// Define a route
-app.get("/", async (request, reply) => {
-	return { hello: "world" };
-});
+// Register the Swagger plugin
+app.register(Swagger, SwaggerOptions);
+app.register(SwaggerUI);
 
-// Register the mahasiswa route
-app.register(require("./src/routes/studentRoute"), { prefix: "/api" });
-
-// Register the dailyReport route
-app.register(require("./src/routes/dailyReportRoute"), { prefix: "/api" });
+// Register the routes
+app.register(routes, { prefix: "/api" });
 
 // Start the server
 app.listen({ port: Port }, function (err, address) {
