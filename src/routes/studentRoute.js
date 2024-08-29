@@ -1,8 +1,17 @@
-const { getAllData } = require("../controllers/mahasiswaController");
+const {
+	getAllStudents,
+	getStudentById,
+	createStudent,
+	updateStudent,
+	deleteStudent,
+} = require("../controllers/studentController");
 
-const mahasiswaRoute = (fastify, options, done) => {
-	fastify.get("/mahasiswa", getAllData);
-	done();
+const studentRoute = async (fastify, options) => {
+	fastify.get("/students", getAllStudents);
+	fastify.get("/students/:id", getStudentById);
+	fastify.post("/students", createStudent);
+	fastify.put("/students/:id", updateStudent);
+	fastify.delete("/students/:id", deleteStudent);
 };
 
-module.exports = mahasiswaRoute;
+module.exports = studentRoute;

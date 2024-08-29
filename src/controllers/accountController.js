@@ -33,6 +33,10 @@ const getAccountById = async (request, reply) => {
 const createAccount = async (request, reply) => {
 	try {
 		const { name, email, password, role } = request.body;
+		const checkEmail = await Account.findOne({ where: { email } });
+		if (checkEmail) {
+			return reply.send({ message: "Email already exists" }).code(400);
+		}
 		const account = await Account.create({ name, email, password, role });
 		const data = {
 			data: account,
