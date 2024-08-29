@@ -1,202 +1,126 @@
-const { DailyReport, Student } = require("../models");
-
-const getAllDailyReport = async (req, reply) => {
+const { DailyReport } = require("../models");
+    
+const getAllDailyReports = async (request, reply) => {
 	try {
-		const dailyReport = await DailyReport.findAll({
-			include: {
-				model: Student,
-				as: "student",
-				attributes: [
-					"id_account",
-					"nim",
-					"job_title",
-					"major",
-					"institution",
-					"laboratory",
-					"status",
-					"start_periode",
-					"end_periode",
-				],
-			},
-		});
-		reply.code(200).send({
-			data: dailyReport,
-		});
+		const dailyReports = await DailyReport.findAll();
+		const data = {
+			data: dailyReports,
+			message: "Successfully get all daily reports",
+		};
+		return reply.send(data).code(200);
 	} catch (error) {
-		reply.code(500).send({
-			message: error.message,
-		});
+		return reply.send(error).code(500);
 	}
 };
 
-const getDailyReportById = async (req, reply) => {
+const getDailyReportById = async (request, reply) => {
 	try {
-		const dailyReport = await DailyReport.findByPk(req.params.id, {
-			include: {
-				model: Student,
-				as: "student",
-				attributes: [
-					"id_account",
-					"nim",
-					"job_title",
-					"major",
-					"institution",
-					"laboratory",
-					"status",
-					"start_periode",
-					"end_periode",
-				],
-			},
-		});
-		reply.code(200).send({
+		const { id } = request.params;
+		const dailyReport = await DailyReport.findByPk(id);
+		if (!dailyReport) {
+			return reply.send({ message: "Daily report not found" }).code(404);
+		}
+		const data = {
 			data: dailyReport,
-		});
+			message: "Successfully get daily report by id",
+		};
+		return reply.send(data).code(200);
 	} catch (error) {
-		reply.code(500).send({
-			message: error.message,
-		});
+		return reply.send(error).code(500);
 	}
 };
 
-const createDailyReport = async (req, reply) => {
+const createDailyReport = async (request, reply) => {
 	try {
+		const {
+			id_student,
+			title,
+			description,
+			time_submitted,
+			report_status,
+			feedback,
+			url,
+			score,
+		} = request.body;
 		const dailyReport = await DailyReport.create({
-			...req.body,
-			id_account: Student.id,
+			id_student,
+			title,
+			description,
+			time_submitted,
+			report_status,
+			feedback,
+			url,
+			score,
 		});
-		reply.code(201).send({
+
+		const data = {
 			data: dailyReport,
-		});
+			message: "Successfully create daily report",
+		};
+		return reply.send(data).code(201);
 	} catch (error) {
-		reply.code(500).send({
-			message: error.message,
-		});
+		return reply.send(error).code(500);
 	}
 };
 
-const updateDailyReport = async (req, reply) => {
+const updateDailyReport = async (request, reply) => {
 	try {
-		const dailyReport = await DailyReport.update(req.body, {
-			where: {
-				id: req.params.id,
-			},
-		});
-		reply.code(200).send({
+		const { id } = request.params;
+		const {
+			id_student,
+			title,
+			description,
+			time_submitted,
+			report_status,
+			feedback,
+			url,
+			score,
+		} = request.body;
+		const dailyReport = await DailyReport.findByPk(id);
+		if (!dailyReport) {
+			return reply.send({ message: "Daily report not found" }).code(404);
+		}
+		dailyReport.id_student = id_student;
+		dailyReport.title = title;
+		dailyReport.description = description;
+		dailyReport.time_submitted = time_submitted;
+		dailyReport.report_status = report_status;
+		dailyReport.feedback = feedback;
+		dailyReport.url = url;
+		dailyReport.score = score;
+		await dailyReport.save();
+		const data = {
 			data: dailyReport,
-		});
+			message: "Successfully update daily report",
+		};
+		return reply.send(data).code(200);
 	} catch (error) {
-		reply.code(500).send({
-			message: error.message,
-		});
+		return reply.send(error).code(500);
 	}
 };
 
-const deleteDailyReport = async (req, reply) => {
+const deleteDailyReport = async (request, reply) => {
 	try {
-		const dailyReport = await DailyReport.destroy({
-			where: {
-				id: req.params.id,
-			},
-		});
-		reply.code(200).send({
+		const { id } = request.params;
+		const dailyReport = await DailyReport.findByPk(id);
+		if (!dailyReport) {
+			return reply.send({ message: "Daily report not found" }).code(404);
+		}
+		await dailyReport.destroy();
+		const data = {
 			data: dailyReport,
-		});
+			message: "Successfully delete daily report",
+		};
+		return reply.send(data).code(200);
 	} catch (error) {
-		reply.code(500).send({
-			message: error.message,
-		});
-	}
-};
-
-const getDailyReportByStudentId = async (req, reply) => {
-	try {
-		const dailyReport = await DailyReport.findAll({
-			where: {
-				id_student: req.params.id,
-			},
-			include: {
-				model: Student,
-				as: "student",
-				attributes: [
-					"id_account",
-					"nim",
-					"job_title",
-					"major",
-					"institution",
-					"laboratory",
-					"status",
-					"start_periode",
-					"end_periode",
-				],
-			},
-		});
-		reply.code(200).send({
-			data: dailyReport,
-		});
-	} catch (error) {
-		reply.code(500).send({
-			message: error.message,
-		});
-	}
-};
-
-const createDailyReportByStudentId = async (req, reply) => {
-	try {
-		const dailyReport = await DailyReport.create({
-			...req.body,
-		});
-		reply.code(201).send({
-			data: dailyReport,
-		});
-	} catch (error) {
-		reply.code(500).send({
-			message: error.message,
-		});
-	}
-};
-
-const updateDailyReportByStudentId = async (req, reply) => {
-	try {
-		const dailyReport = await DailyReport.update(req.body, {
-			where: {
-				id_student: req.params.id,
-			},
-		});
-		reply.code(200).send({
-			data: dailyReport,
-		});
-	} catch (error) {
-		reply.code(500).send({
-			message: error.message,
-		});
-	}
-};
-
-const deleteDailyReportByStudentId = async (req, reply) => {
-	try {
-		const dailyReport = await DailyReport.destroy({
-			where: {
-				id_student: req.params.id,
-			},
-		});
-		reply.code(200).send({
-			data: dailyReport,
-		});
-	} catch (error) {
-		reply.code(500).send({
-			message: error.message,
-		});
+		return reply.send(error).code(500);
 	}
 };
 
 module.exports = {
-	getAllDailyReport,
+	getAllDailyReports,
 	getDailyReportById,
 	createDailyReport,
 	updateDailyReport,
 	deleteDailyReport,
-	getDailyReportByStudentId,
-	createDailyReportByStudentId,
-	updateDailyReportByStudentId,
-	deleteDailyReportByStudentId,
 };

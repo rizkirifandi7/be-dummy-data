@@ -1,4 +1,5 @@
 const { Account } = require("../models");
+const bcrypt = require("bcrypt");
 
 const getAllAccounts = async (request, reply) => {
 	try {
@@ -37,7 +38,13 @@ const createAccount = async (request, reply) => {
 		if (checkEmail) {
 			return reply.send({ message: "Email already exists" }).code(400);
 		}
-		const account = await Account.create({ name, email, password, role });
+		const hashedPassword = await bcrypt.hash(password, 10);
+		const account = await Account.create({
+			name,
+			email,
+			password: hashedPassword,
+			role,
+		});
 		const data = {
 			data: account,
 			message: "Successfully create account",

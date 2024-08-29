@@ -18,12 +18,7 @@ const register = async (req, res) => {
 			retypePassword,
 		} = req.body;
 
-		// Check if user with the provided email already exists
-		const existingUser = await Account.findOne({
-			where: { email: email },
-		});
-
-		if (existingUser) {
+		if (await Account.findOne({ where: { email } })) {
 			return res
 				.code(400)
 				.send({ message: "User with this email already exists" });
@@ -32,19 +27,15 @@ const register = async (req, res) => {
 			return res.code(400).send({ message: "Passwords do not match" });
 		}
 
-		// Hash the password
 		const hashedPassword = await bcrypt.hash(password, 10);
-
-		// Create a new user
-		const users = await Account.create({
+		const user = await Account.create({
 			name,
 			email,
 			password: hashedPassword,
 			role: "student",
 		});
-
-		const usersStudent = await Student.create({
-			id_account: users.id,
+		const studentDetails = await Student.create({
+			id_account: user.id,
 			nim,
 			institution,
 			major,
@@ -53,15 +44,13 @@ const register = async (req, res) => {
 			status: "active",
 		});
 
-		// Combine usersStudent into users
-		users.dataValues.studentDetails = usersStudent;
-
-		res.code(201).send({
-			data: {
-				users,
-			},
-			message: "Student account has been created successfully",
-		});
+		user.dataValues.studentDetails = studentDetails;
+		res
+			.code(201)
+			.send({
+				data: { user },
+				message: "Student account has been created successfully",
+			});
 	} catch (error) {
 		console.error(error);
 		res.code(500).send({ message: "Internal Server Error" });
@@ -71,37 +60,18 @@ const register = async (req, res) => {
 const login = async (req, res) => {
 	try {
 		const { email, password } = req.body;
+		const user = await Account.findOne({ where: { email } });
 
-		// Cari pengguna berdasarkan alamat email
-		const student = await Account.findOne({ where: { email: email } });
-
-		// Jika pengguna tidak ditemukan
-		if (!student) {
+		if (!user || !(await bcrypt.compare(password, user.password))) {
 			return res.code(401).send({ message: "Invalid credentials" });
 		}
 
-		// Bandingkan kata sandi yang dimasukkan dengan yang disimpan dalam basis data
-		const passwordMatch = await bcrypt.compare(password, student.password);
-
-		// Jika kata sandi tidak sesuai
-		if (!passwordMatch) {
-			return res.code(401).send({ message: "Invalid credentials" });
-		}
-
-		// Generate token JWT
 		const token = jwt.sign(
-			{
-				studentId: student.id,
-				name: student.name,
-				email: student.email,
-			},
+			{ studentId: user.id, name: user.name, email: user.email },
 			process.env.JWT_KEY,
-			{ expiresIn: "24h" }
+			{ expiresIn: "12h" }
 		);
-
-		res.cookie("tokenStudent", token);
-		// Kirim respons dengan token
-		res.code(200).send({ token });
+		res.cookie("tokenStudent", token).code(200).send({ token });
 	} catch (error) {
 		console.error(error);
 		res.code(500).send({ message: "Internal Server Error" });
@@ -110,17 +80,14 @@ const login = async (req, res) => {
 
 const logout = async (req, res) => {
 	try {
-		// Clear the 'token' cookie
-		res.clearCookie("tokenStudent", { httpOnly: true });
-		res.code(200).send({ message: "Logout successful" });
+		res
+			.clearCookie("tokenStudent", { httpOnly: true })
+			.code(200)
+			.send({ message: "Logout successful" });
 	} catch (error) {
 		console.error(error);
 		res.code(500).send({ message: "Internal Server Error" });
 	}
 };
 
-module.exports = {
-	register,
-	login,
-	logout,
-};
+module.exports = { register, login, logout };

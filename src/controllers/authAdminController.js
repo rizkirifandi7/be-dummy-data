@@ -42,7 +42,7 @@ const register = async (req, res) => {
 	}
 };
 
-const login = async (req, res) => {
+const login = async (req, reply) => {
 	try {
 		const { email, password } = req.body;
 		const admin = await Account.findOne({
@@ -50,12 +50,12 @@ const login = async (req, res) => {
 		});
 
 		if (!admin) {
-			return res.code(401).send({ message: "Invalid credentials" });
+			return reply.code(401).send({ message: "Invalid credentials" });
 		}
 
 		const passwordMatch = await bcrypt.compare(password, admin.password);
 		if (!passwordMatch) {
-			return res.code(401).send({ message: "Invalid credentials" });
+			return reply.code(401).send({ message: "Invalid credentials" });
 		}
 
 		const token = jwt.sign(
@@ -70,12 +70,12 @@ const login = async (req, res) => {
 		);
 
 		const role = "admin";
-		res.cookie("tokenAdmin", token, { httpOnly: true });
-		res.cookie("role", role);
-		res.code(200).send({ token });
+		reply.setCookie("tokenAdmin", token, { httpOnly: true });
+		reply.setCookie("role", role);
+		reply.code(200).send({ token });
 	} catch (error) {
 		console.error(error);
-		res.code(500).send({ message: "Internal Server Error" });
+		reply.code(500).send({ message: "Internal Server Error" });
 	}
 };
 

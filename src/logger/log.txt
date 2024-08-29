@@ -458,3 +458,470 @@
 {"level":30,"time":1724906719916,"pid":19620,"hostname":"IQBAL-LAPTOP","reqId":"req-4","res":{"statusCode":200},"responseTime":307.3505000025034,"msg":"request completed"}
 {"level":30,"time":1724906729355,"pid":19620,"hostname":"IQBAL-LAPTOP","reqId":"req-5","req":{"method":"POST","url":"/api/manajement/logout","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":50143},"msg":"incoming request"}
 {"level":30,"time":1724906729364,"pid":19620,"hostname":"IQBAL-LAPTOP","reqId":"req-5","res":{"statusCode":200},"responseTime":8.280699998140335,"msg":"request completed"}
+{"level":50,"time":1724907143725,"pid":17700,"hostname":"IQBAL-LAPTOP","err":{"type":"FastifyError","message":"Missing handler function for \"GET:/dailyreports\" route.","stack":"FastifyError: Missing handler function for \"GET:/dailyreports\" route.\n    at Object.route (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:234:13)\n    at Object.prepareRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:167:18)\n    at Object._get [as get] (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\fastify.js:262:34)\n    at dailyReportRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\routes\\dailyReportRoute.js:10:10)\n    at Plugin.exec (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\lib\\plugin.js:125:28)\n    at Boot._loadPlugin (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:432:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","code":"FST_ERR_ROUTE_MISSING_HANDLER","name":"FastifyError","statusCode":500},"msg":"Missing handler function for \"GET:/dailyreports\" route."}
+{"level":30,"time":1724913019338,"pid":14768,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913019346,"pid":14768,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913019346,"pid":14768,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913038186,"pid":14768,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"GET","url":"/api/accounts","hostname":"localhost:8000","remoteAddress":"::1","remotePort":53442},"msg":"incoming request"}
+{"level":30,"time":1724913038439,"pid":14768,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":200},"responseTime":250.862399995327,"msg":"request completed"}
+{"level":30,"time":1724913104198,"pid":14768,"hostname":"IQBAL-LAPTOP","reqId":"req-2","req":{"method":"POST","url":"/api/manajement/register","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":53522},"msg":"incoming request"}
+{"level":30,"time":1724913104465,"pid":14768,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":201},"responseTime":266.4539999961853,"msg":"request completed"}
+{"level":30,"time":1724913126898,"pid":14768,"hostname":"IQBAL-LAPTOP","reqId":"req-3","req":{"method":"POST","url":"/api/manajement/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":53522},"msg":"incoming request"}
+{"level":30,"time":1724913127315,"pid":14768,"hostname":"IQBAL-LAPTOP","reqId":"req-3","res":{"statusCode":200},"responseTime":417.17110000550747,"msg":"request completed"}
+{"level":30,"time":1724913247989,"pid":18296,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913247993,"pid":18296,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913247993,"pid":18296,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913252723,"pid":18536,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913252726,"pid":18536,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913252727,"pid":18536,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913284876,"pid":3520,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913284879,"pid":3520,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913284879,"pid":3520,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913315049,"pid":9948,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913315053,"pid":9948,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913315053,"pid":9948,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913435587,"pid":12960,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913435592,"pid":12960,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913435592,"pid":12960,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913438040,"pid":10784,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913438043,"pid":10784,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913438043,"pid":10784,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913440514,"pid":17688,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913440520,"pid":17688,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913440520,"pid":17688,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913481660,"pid":10172,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913481666,"pid":10172,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913481667,"pid":10172,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913491580,"pid":21240,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913491583,"pid":21240,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913491583,"pid":21240,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913495781,"pid":20932,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913495786,"pid":20932,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913495787,"pid":20932,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913499739,"pid":5508,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913499743,"pid":5508,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913499743,"pid":5508,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913519693,"pid":936,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913519697,"pid":936,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913519697,"pid":936,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913522321,"pid":18932,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913522326,"pid":18932,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913522326,"pid":18932,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913527731,"pid":12212,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913527735,"pid":12212,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913527735,"pid":12212,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913531475,"pid":15380,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913531477,"pid":15380,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913531477,"pid":15380,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913540102,"pid":8748,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913540105,"pid":8748,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913540105,"pid":8748,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913543191,"pid":4292,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913543193,"pid":4292,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913543193,"pid":4292,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913547086,"pid":15800,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913547088,"pid":15800,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913547088,"pid":15800,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913569380,"pid":5404,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913569384,"pid":5404,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913569385,"pid":5404,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913576460,"pid":17640,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913576463,"pid":17640,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913576463,"pid":17640,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913586105,"pid":5856,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913586108,"pid":5856,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913586108,"pid":5856,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724913591206,"pid":14360,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724913591208,"pid":14360,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724913591208,"pid":14360,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724914696957,"pid":19612,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724914696963,"pid":19612,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724914696963,"pid":19612,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724914733758,"pid":9596,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724914733761,"pid":9596,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724914733761,"pid":9596,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915446672,"pid":20804,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915446676,"pid":20804,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915446677,"pid":20804,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915450070,"pid":16456,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915450073,"pid":16456,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915450074,"pid":16456,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915461369,"pid":16604,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915461372,"pid":16604,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915461373,"pid":16604,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915613958,"pid":18832,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915613961,"pid":18832,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915613961,"pid":18832,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915760902,"pid":1928,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915760906,"pid":1928,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915760907,"pid":1928,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915801963,"pid":13512,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915801967,"pid":13512,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915801968,"pid":13512,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915838119,"pid":20384,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915838123,"pid":20384,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915838123,"pid":20384,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915848376,"pid":21380,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915848381,"pid":21380,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915848382,"pid":21380,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915852440,"pid":19620,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915852445,"pid":19620,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915852445,"pid":19620,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915854828,"pid":12140,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915854834,"pid":12140,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915854835,"pid":12140,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915869922,"pid":10432,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915869926,"pid":10432,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915869927,"pid":10432,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915905230,"pid":17212,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915905234,"pid":17212,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915905235,"pid":17212,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915926408,"pid":20644,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915926413,"pid":20644,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915926413,"pid":20644,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915936724,"pid":16828,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915936727,"pid":16828,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915936727,"pid":16828,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915942812,"pid":7320,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915942814,"pid":7320,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915942815,"pid":7320,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915948746,"pid":13020,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915948749,"pid":13020,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915948750,"pid":13020,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915952540,"pid":11048,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915952544,"pid":11048,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915952544,"pid":11048,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915956664,"pid":4824,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915956668,"pid":4824,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915956668,"pid":4824,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724915982243,"pid":19612,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724915982247,"pid":19612,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724915982247,"pid":19612,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":50,"time":1724916229475,"pid":14404,"hostname":"IQBAL-LAPTOP","err":{"type":"FastifyError","message":"Missing handler function for \"GET:/students\" route.","stack":"FastifyError: Missing handler function for \"GET:/students\" route.\n    at Object.route (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:234:13)\n    at Object.prepareRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:167:18)\n    at Object._get [as get] (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\fastify.js:262:34)\n    at studentRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\routes\\studentRoute.js:10:10)\n    at Plugin.exec (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\lib\\plugin.js:125:28)\n    at Boot._loadPlugin (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:432:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","code":"FST_ERR_ROUTE_MISSING_HANDLER","name":"FastifyError","statusCode":500},"msg":"Missing handler function for \"GET:/students\" route."}
+{"level":50,"time":1724916232480,"pid":8000,"hostname":"IQBAL-LAPTOP","err":{"type":"ReferenceError","message":"pregetAllStudents is not defined","stack":"ReferenceError: pregetAllStudents is not defined\n    at studentRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\routes\\studentRoute.js:10:28)\n    at Plugin.exec (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\lib\\plugin.js:125:28)\n    at Boot._loadPlugin (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:432:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"},"msg":"pregetAllStudents is not defined"}
+{"level":50,"time":1724916235403,"pid":10632,"hostname":"IQBAL-LAPTOP","err":{"type":"FastifyError","message":"Missing handler function for \"GET:/students\" route.","stack":"FastifyError: Missing handler function for \"GET:/students\" route.\n    at Object.route (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:234:13)\n    at Object.prepareRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:167:18)\n    at Object._get [as get] (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\fastify.js:262:34)\n    at studentRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\routes\\studentRoute.js:10:10)\n    at Plugin.exec (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\lib\\plugin.js:125:28)\n    at Boot._loadPlugin (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:432:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","code":"FST_ERR_ROUTE_MISSING_HANDLER","name":"FastifyError","statusCode":500},"msg":"Missing handler function for \"GET:/students\" route."}
+{"level":30,"time":1724916268326,"pid":7060,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724916268332,"pid":7060,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724916268333,"pid":7060,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917327357,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":56429},"msg":"incoming request"}
+{"level":30,"time":1724917328022,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":401},"responseTime":661.8519999980927,"msg":"request completed"}
+{"level":30,"time":1724917332333,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-2","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":56429},"msg":"incoming request"}
+{"level":30,"time":1724917332514,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":200},"responseTime":180.4779000133276,"msg":"request completed"}
+{"level":30,"time":1724917344492,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-3","req":{"method":"GET","url":"/api/student/","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":56429},"msg":"incoming request"}
+{"level":30,"time":1724917344492,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-3","msg":"Route GET:/api/student/ not found"}
+{"level":30,"time":1724917344494,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-3","res":{"statusCode":404},"responseTime":1.9890000075101852,"msg":"request completed"}
+{"level":30,"time":1724917355643,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-4","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":56429},"msg":"incoming request"}
+{"level":30,"time":1724917355645,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-4","res":{"statusCode":403},"err":{"type":"TypeError","message":"res.status(...).json is not a function","stack":"TypeError: res.status(...).json is not a function\n    at Object.isAdmin (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\middleware\\verifyToken.js:17:19)\n    at hookIterator (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:405:10)\n    at next (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:239:18)\n    at hookRunner (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:261:5)\n    at validationCompleted (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:115:5)\n    at preValidationCallback (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:99:5)\n    at handler (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:76:7)\n    at handleRequest (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:24:5)\n    at runPreParsing (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:613:5)\n    at next (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:233:9)"},"msg":"res.status(...).json is not a function"}
+{"level":30,"time":1724917355648,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-4","res":{"statusCode":403},"responseTime":5.567900002002716,"msg":"request completed"}
+{"level":30,"time":1724917371197,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-5","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":56429},"msg":"incoming request"}
+{"level":30,"time":1724917371199,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-5","res":{"statusCode":403},"err":{"type":"TypeError","message":"res.status(...).json is not a function","stack":"TypeError: res.status(...).json is not a function\n    at Object.isAdmin (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\middleware\\verifyToken.js:17:19)\n    at hookIterator (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:405:10)\n    at next (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:239:18)\n    at hookRunner (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:261:5)\n    at validationCompleted (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:115:5)\n    at preValidationCallback (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:99:5)\n    at handler (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:76:7)\n    at handleRequest (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:24:5)\n    at runPreParsing (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:613:5)\n    at next (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:233:9)"},"msg":"res.status(...).json is not a function"}
+{"level":30,"time":1724917371203,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-5","res":{"statusCode":403},"responseTime":5.454199999570847,"msg":"request completed"}
+{"level":30,"time":1724917390617,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-6","req":{"method":"GET","url":"/api/students/1","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":56429},"msg":"incoming request"}
+{"level":30,"time":1724917390728,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-6","res":{"statusCode":200},"responseTime":110.1106999963522,"msg":"request completed"}
+{"level":30,"time":1724917395354,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-7","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":56429},"msg":"incoming request"}
+{"level":30,"time":1724917395355,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-7","res":{"statusCode":403},"err":{"type":"TypeError","message":"res.status(...).json is not a function","stack":"TypeError: res.status(...).json is not a function\n    at Object.isAdmin (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\middleware\\verifyToken.js:17:19)\n    at hookIterator (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:405:10)\n    at next (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:239:18)\n    at hookRunner (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:261:5)\n    at validationCompleted (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:115:5)\n    at preValidationCallback (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:99:5)\n    at handler (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:76:7)\n    at handleRequest (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:24:5)\n    at runPreParsing (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:613:5)\n    at next (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:233:9)"},"msg":"res.status(...).json is not a function"}
+{"level":30,"time":1724917395356,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-7","res":{"statusCode":403},"responseTime":1.1131000071763992,"msg":"request completed"}
+{"level":30,"time":1724917403969,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-8","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":56429},"msg":"incoming request"}
+{"level":30,"time":1724917403971,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-8","res":{"statusCode":403},"err":{"type":"TypeError","message":"res.status(...).json is not a function","stack":"TypeError: res.status(...).json is not a function\n    at Object.isAdmin (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\middleware\\verifyToken.js:17:19)\n    at hookIterator (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:405:10)\n    at next (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:239:18)\n    at hookRunner (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:261:5)\n    at validationCompleted (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:115:5)\n    at preValidationCallback (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:99:5)\n    at handler (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:76:7)\n    at handleRequest (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:24:5)\n    at runPreParsing (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:613:5)\n    at next (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:233:9)"},"msg":"res.status(...).json is not a function"}
+{"level":30,"time":1724917403973,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-8","res":{"statusCode":403},"responseTime":2.4567999988794327,"msg":"request completed"}
+{"level":30,"time":1724917411910,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-9","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":56429},"msg":"incoming request"}
+{"level":30,"time":1724917412206,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-9","res":{"statusCode":200},"responseTime":294.5346000045538,"msg":"request completed"}
+{"level":30,"time":1724917421548,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-a","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":56429},"msg":"incoming request"}
+{"level":30,"time":1724917421549,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-a","res":{"statusCode":403},"err":{"type":"TypeError","message":"res.status(...).json is not a function","stack":"TypeError: res.status(...).json is not a function\n    at Object.isAdmin (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\middleware\\verifyToken.js:17:19)\n    at hookIterator (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:405:10)\n    at next (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:239:18)\n    at hookRunner (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:261:5)\n    at validationCompleted (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:115:5)\n    at preValidationCallback (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:99:5)\n    at handler (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:76:7)\n    at handleRequest (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:24:5)\n    at runPreParsing (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:613:5)\n    at next (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:233:9)"},"msg":"res.status(...).json is not a function"}
+{"level":30,"time":1724917421550,"pid":7060,"hostname":"IQBAL-LAPTOP","reqId":"req-a","res":{"statusCode":403},"responseTime":1.9782000035047531,"msg":"request completed"}
+{"level":30,"time":1724917481186,"pid":10880,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917481189,"pid":10880,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917481189,"pid":10880,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917553877,"pid":13596,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917553880,"pid":13596,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917553880,"pid":13596,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917570864,"pid":17472,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917570869,"pid":17472,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917570870,"pid":17472,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917583675,"pid":19380,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917583681,"pid":19380,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917583681,"pid":19380,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917597173,"pid":16512,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917597178,"pid":16512,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917597178,"pid":16512,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917685441,"pid":19640,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917685446,"pid":19640,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917685446,"pid":19640,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917691613,"pid":11012,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917691615,"pid":11012,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917691616,"pid":11012,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917694010,"pid":14228,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917694014,"pid":14228,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917694014,"pid":14228,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917697883,"pid":20884,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917697886,"pid":20884,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917697886,"pid":20884,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917700942,"pid":19616,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917700944,"pid":19616,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917700945,"pid":19616,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917705339,"pid":13832,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917705343,"pid":13832,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917705343,"pid":13832,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917708712,"pid":16592,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917708716,"pid":16592,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917708717,"pid":16592,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917715047,"pid":16068,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917715050,"pid":16068,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917715051,"pid":16068,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":50,"time":1724917759393,"pid":9220,"hostname":"IQBAL-LAPTOP","err":{"type":"FastifyError","message":"URL must be a string. Received 'undefined'","stack":"FastifyError: URL must be a string. Received 'undefined'\n    at Object.prepareRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:142:13)\n    at Object._get [as get] (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\fastify.js:262:34)\n    at studentRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\routes\\studentRoute.js:11:10)\n    at Plugin.exec (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\lib\\plugin.js:125:28)\n    at Boot._loadPlugin (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:432:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","code":"FST_ERR_INVALID_URL","name":"FastifyError","statusCode":400},"msg":"URL must be a string. Received 'undefined'"}
+{"level":50,"time":1724917763318,"pid":16132,"hostname":"IQBAL-LAPTOP","err":{"type":"FastifyError","message":"Missing handler function for \"GET:/token\" route.","stack":"FastifyError: Missing handler function for \"GET:/token\" route.\n    at Object.route (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:234:13)\n    at Object.prepareRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:167:18)\n    at Object._get [as get] (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\fastify.js:262:34)\n    at studentRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\routes\\studentRoute.js:11:10)\n    at Plugin.exec (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\lib\\plugin.js:125:28)\n    at Boot._loadPlugin (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:432:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","code":"FST_ERR_ROUTE_MISSING_HANDLER","name":"FastifyError","statusCode":500},"msg":"Missing handler function for \"GET:/token\" route."}
+{"level":30,"time":1724917774404,"pid":20804,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917774408,"pid":20804,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917774408,"pid":20804,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":50,"time":1724917778040,"pid":18364,"hostname":"IQBAL-LAPTOP","err":{"type":"FastifyError","message":"Options for \"GET:/token\" route must be an object","stack":"FastifyError: Options for \"GET:/token\" route must be an object\n    at Object.prepareRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:150:15)\n    at Object._get [as get] (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\fastify.js:262:34)\n    at studentRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\routes\\studentRoute.js:12:10)\n    at Plugin.exec (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\lib\\plugin.js:125:28)\n    at Boot._loadPlugin (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:432:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","code":"FST_ERR_ROUTE_OPTIONS_NOT_OBJ","name":"FastifyError","statusCode":500},"msg":"Options for \"GET:/token\" route must be an object"}
+{"level":50,"time":1724917795353,"pid":9720,"hostname":"IQBAL-LAPTOP","err":{"type":"FastifyError","message":"Missing handler function for \"GET:/token\" route.","stack":"FastifyError: Missing handler function for \"GET:/token\" route.\n    at Object.route (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:234:13)\n    at Object.prepareRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:167:18)\n    at Object._get [as get] (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\fastify.js:262:34)\n    at studentRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\routes\\studentRoute.js:12:10)\n    at Plugin.exec (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\lib\\plugin.js:125:28)\n    at Boot._loadPlugin (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:432:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","code":"FST_ERR_ROUTE_MISSING_HANDLER","name":"FastifyError","statusCode":500},"msg":"Missing handler function for \"GET:/token\" route."}
+{"level":50,"time":1724917799493,"pid":18152,"hostname":"IQBAL-LAPTOP","err":{"type":"FastifyError","message":"Missing handler function for \"GET:/token\" route.","stack":"FastifyError: Missing handler function for \"GET:/token\" route.\n    at Object.route (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:234:13)\n    at Object.prepareRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:167:18)\n    at Object._get [as get] (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\fastify.js:262:34)\n    at studentRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\routes\\studentRoute.js:12:10)\n    at Plugin.exec (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\lib\\plugin.js:125:28)\n    at Boot._loadPlugin (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:432:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","code":"FST_ERR_ROUTE_MISSING_HANDLER","name":"FastifyError","statusCode":500},"msg":"Missing handler function for \"GET:/token\" route."}
+{"level":30,"time":1724917803674,"pid":14144,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917803677,"pid":14144,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917803677,"pid":14144,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917819188,"pid":14144,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":56919},"msg":"incoming request"}
+{"level":30,"time":1724917819752,"pid":14144,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":200},"responseTime":563.1133000105619,"msg":"request completed"}
+{"level":30,"time":1724917828794,"pid":14144,"hostname":"IQBAL-LAPTOP","reqId":"req-2","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":56919},"msg":"incoming request"}
+{"level":30,"time":1724917828796,"pid":14144,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":403},"err":{"type":"TypeError","message":"res.status(...).json is not a function","stack":"TypeError: res.status(...).json is not a function\n    at Object.isAdmin (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\middleware\\verifyToken.js:17:19)\n    at hookIterator (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:405:10)\n    at next (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:239:18)\n    at hookRunner (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:261:5)\n    at validationCompleted (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:115:5)\n    at preValidationCallback (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:99:5)\n    at handler (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:76:7)\n    at handleRequest (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\handleRequest.js:24:5)\n    at runPreParsing (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\route.js:613:5)\n    at next (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\lib\\hooks.js:233:9)"},"msg":"res.status(...).json is not a function"}
+{"level":30,"time":1724917828800,"pid":14144,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":403},"responseTime":6.029400005936623,"msg":"request completed"}
+{"level":30,"time":1724917904866,"pid":13036,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917904871,"pid":13036,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917904872,"pid":13036,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917910696,"pid":20996,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917910701,"pid":20996,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917910701,"pid":20996,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917968456,"pid":7368,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917968459,"pid":7368,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917968459,"pid":7368,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917972572,"pid":20948,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917972580,"pid":20948,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917972581,"pid":20948,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917976430,"pid":7804,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917976434,"pid":7804,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917976434,"pid":7804,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917989141,"pid":20560,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917989144,"pid":20560,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917989144,"pid":20560,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917991468,"pid":5692,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917991470,"pid":5692,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917991471,"pid":5692,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724917995326,"pid":21108,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724917995330,"pid":21108,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724917995330,"pid":21108,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724918000353,"pid":20012,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724918000356,"pid":20012,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724918000357,"pid":20012,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724918012504,"pid":14772,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724918012508,"pid":14772,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724918012508,"pid":14772,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724918016199,"pid":4556,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724918016202,"pid":4556,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724918016202,"pid":4556,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724918027880,"pid":11060,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724918027884,"pid":11060,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724918027885,"pid":11060,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724918043731,"pid":11060,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57112},"msg":"incoming request"}
+{"level":30,"time":1724918044209,"pid":11060,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":200},"responseTime":475.85449999570847,"msg":"request completed"}
+{"level":30,"time":1724918105433,"pid":11060,"hostname":"IQBAL-LAPTOP","reqId":"req-2","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57159},"msg":"incoming request"}
+{"level":30,"time":1724918105435,"pid":11060,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":401},"responseTime":1.9268999993801117,"msg":"request completed"}
+{"level":30,"time":1724918122452,"pid":11060,"hostname":"IQBAL-LAPTOP","reqId":"req-3","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57159},"msg":"incoming request"}
+{"level":30,"time":1724918122705,"pid":11060,"hostname":"IQBAL-LAPTOP","reqId":"req-3","res":{"statusCode":200},"responseTime":252.33640000224113,"msg":"request completed"}
+{"level":30,"time":1724918133395,"pid":11060,"hostname":"IQBAL-LAPTOP","reqId":"req-4","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57159},"msg":"incoming request"}
+{"level":30,"time":1724918133396,"pid":11060,"hostname":"IQBAL-LAPTOP","reqId":"req-4","res":{"statusCode":401},"responseTime":0.793299987912178,"msg":"request completed"}
+{"level":30,"time":1724918158155,"pid":17828,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724918158159,"pid":17828,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724918158159,"pid":17828,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724918163325,"pid":17828,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57226},"msg":"incoming request"}
+{"level":30,"time":1724918163345,"pid":17828,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":401},"responseTime":18.32479999959469,"msg":"request completed"}
+{"level":30,"time":1724918167485,"pid":17828,"hostname":"IQBAL-LAPTOP","reqId":"req-2","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57226},"msg":"incoming request"}
+{"level":30,"time":1724918167927,"pid":17828,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":200},"responseTime":441.4628999978304,"msg":"request completed"}
+{"level":30,"time":1724918178354,"pid":17828,"hostname":"IQBAL-LAPTOP","reqId":"req-3","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57226},"msg":"incoming request"}
+{"level":30,"time":1724918178356,"pid":17828,"hostname":"IQBAL-LAPTOP","reqId":"req-3","res":{"statusCode":401},"responseTime":1.2647999972105026,"msg":"request completed"}
+{"level":50,"time":1724918241271,"pid":7420,"hostname":"IQBAL-LAPTOP","err":{"type":"ReferenceError","message":"isAdminOrSelf is not defined","stack":"ReferenceError: isAdminOrSelf is not defined\n    at studentRoute (C:\\IKI\\kp-telkom\\be-web-laporan\\src\\routes\\studentRoute.js:13:41)\n    at Plugin.exec (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\lib\\plugin.js:125:28)\n    at Boot._loadPlugin (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:432:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"},"msg":"isAdminOrSelf is not defined"}
+{"level":30,"time":1724918254703,"pid":20168,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724918254707,"pid":20168,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724918254707,"pid":20168,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":50,"time":1724918401013,"pid":4528,"hostname":"IQBAL-LAPTOP","err":{"type":"FastifyError","message":"fastify-plugin: Plugin did not start in time: 'cookieParser'. You may have forgotten to call 'done' function or to resolve a Promise: Plugin did not start in time: 'cookieParser'. You may have forgotten to call 'done' function or to resolve a Promise","stack":"FastifyError: fastify-plugin: Plugin did not start in time: 'cookieParser'. You may have forgotten to call 'done' function or to resolve a Promise\n    at manageErr (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\fastify.js:628:33)\n    at C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastify\\fastify.js:614:11\n    at Object._encapsulateThreeParam (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:600:7)\n    at Boot.timeoutCall (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:494:5)\n    at Boot.callWithCbOrNextTick (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:476:19)\n    at release (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastq\\queue.js:171:16)\n    at Object.resume (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\fastq\\queue.js:103:7)\n    at C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:116:18\n    at C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\boot.js:437:7\n    at done (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\lib\\plugin.js:226:5)\ncaused by: FastifyError: Plugin did not start in time: 'cookieParser'. You may have forgotten to call 'done' function or to resolve a Promise\n    at Timeout._onTimeout (C:\\IKI\\kp-telkom\\be-web-laporan\\node_modules\\avvio\\lib\\plugin.js:114:31)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)","code":"FST_ERR_PLUGIN_TIMEOUT","name":"FastifyError","statusCode":500},"msg":"fastify-plugin: Plugin did not start in time: 'cookieParser'. You may have forgotten to call 'done' function or to resolve a Promise"}
+{"level":30,"time":1724918520859,"pid":20000,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724918520862,"pid":20000,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724918520862,"pid":20000,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724918596666,"pid":21460,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724918596670,"pid":21460,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724918596670,"pid":21460,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724918600438,"pid":14356,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724918600442,"pid":14356,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724918600443,"pid":14356,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724918652445,"pid":14356,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57636},"msg":"incoming request"}
+{"level":30,"time":1724918652952,"pid":14356,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":200},"responseTime":505.51129999756813,"msg":"request completed"}
+{"level":30,"time":1724918672347,"pid":14356,"hostname":"IQBAL-LAPTOP","reqId":"req-2","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57636},"msg":"incoming request"}
+{"level":30,"time":1724918672350,"pid":14356,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":401},"responseTime":2.007500007748604,"msg":"request completed"}
+{"level":30,"time":1724918790213,"pid":20548,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724918790216,"pid":20548,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724918790217,"pid":20548,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724918811198,"pid":18844,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724918811202,"pid":18844,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724918811203,"pid":18844,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724918829566,"pid":14184,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724918829571,"pid":14184,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724918829571,"pid":14184,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724918831968,"pid":14184,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57792},"msg":"incoming request"}
+{"level":30,"time":1724918831980,"pid":14184,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":401},"responseTime":10.590599998831749,"msg":"request completed"}
+{"level":30,"time":1724918836019,"pid":14184,"hostname":"IQBAL-LAPTOP","reqId":"req-2","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57792},"msg":"incoming request"}
+{"level":30,"time":1724918836021,"pid":14184,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":401},"responseTime":1.586899995803833,"msg":"request completed"}
+{"level":30,"time":1724918839121,"pid":14184,"hostname":"IQBAL-LAPTOP","reqId":"req-3","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57792},"msg":"incoming request"}
+{"level":30,"time":1724918839583,"pid":14184,"hostname":"IQBAL-LAPTOP","reqId":"req-3","res":{"statusCode":200},"responseTime":461.86370000243187,"msg":"request completed"}
+{"level":30,"time":1724918848529,"pid":14184,"hostname":"IQBAL-LAPTOP","reqId":"req-4","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57792},"msg":"incoming request"}
+{"level":30,"time":1724918848531,"pid":14184,"hostname":"IQBAL-LAPTOP","reqId":"req-4","res":{"statusCode":401},"responseTime":1.4477999955415726,"msg":"request completed"}
+{"level":30,"time":1724918867079,"pid":14184,"hostname":"IQBAL-LAPTOP","reqId":"req-5","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":57792},"msg":"incoming request"}
+{"level":30,"time":1724918867081,"pid":14184,"hostname":"IQBAL-LAPTOP","reqId":"req-5","res":{"statusCode":401},"responseTime":1.1853999942541122,"msg":"request completed"}
+{"level":30,"time":1724919080691,"pid":2172,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724919080694,"pid":2172,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724919080695,"pid":2172,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724919106163,"pid":9980,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724919106167,"pid":9980,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724919106168,"pid":9980,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724919112708,"pid":9980,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":58023},"msg":"incoming request"}
+{"level":30,"time":1724919112730,"pid":9980,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":403},"responseTime":20.248099997639656,"msg":"request completed"}
+{"level":30,"time":1724919116677,"pid":9980,"hostname":"IQBAL-LAPTOP","reqId":"req-2","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":58023},"msg":"incoming request"}
+{"level":30,"time":1724919116680,"pid":9980,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":403},"responseTime":2.8800999969244003,"msg":"request completed"}
+{"level":30,"time":1724919126903,"pid":7560,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724919126908,"pid":7560,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724919126908,"pid":7560,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724919131082,"pid":11960,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724919131086,"pid":11960,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724919131086,"pid":11960,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724919132547,"pid":11960,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":58049},"msg":"incoming request"}
+{"level":30,"time":1724919132997,"pid":11960,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":200},"responseTime":449.2867999970913,"msg":"request completed"}
+{"level":30,"time":1724919691680,"pid":744,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724919691686,"pid":744,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724919691686,"pid":744,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724919698968,"pid":744,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":58524},"msg":"incoming request"}
+{"level":30,"time":1724919699466,"pid":744,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":200},"responseTime":495.94150000810623,"msg":"request completed"}
+{"level":30,"time":1724919713299,"pid":744,"hostname":"IQBAL-LAPTOP","reqId":"req-2","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":58524},"msg":"incoming request"}
+{"level":30,"time":1724919713302,"pid":744,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":401},"responseTime":2.4144999980926514,"msg":"request completed"}
+{"level":30,"time":1724919921358,"pid":17312,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724919921373,"pid":17312,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724919921374,"pid":17312,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724919925463,"pid":11556,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724919925466,"pid":11556,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724919925466,"pid":11556,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724919931996,"pid":12772,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724919932001,"pid":12772,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724919932002,"pid":12772,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724919946923,"pid":6472,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724919946930,"pid":6472,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724919946930,"pid":6472,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724920270426,"pid":15144,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724920270431,"pid":15144,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724920270431,"pid":15144,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724920284423,"pid":20332,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724920284429,"pid":20332,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724920284430,"pid":20332,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724920287914,"pid":16044,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724920287918,"pid":16044,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724920287918,"pid":16044,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724920289898,"pid":20848,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724920289901,"pid":20848,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724920289901,"pid":20848,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724920293765,"pid":20140,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724920293770,"pid":20140,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724920293770,"pid":20140,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724920297946,"pid":5812,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724920297949,"pid":5812,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724920297950,"pid":5812,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724920929416,"pid":20692,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724920929425,"pid":20692,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724920929425,"pid":20692,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724921730636,"pid":9048,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724921730642,"pid":9048,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724921730643,"pid":9048,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922205178,"pid":19388,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922205181,"pid":19388,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922205181,"pid":19388,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922209062,"pid":19060,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922209067,"pid":19060,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922209067,"pid":19060,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922233001,"pid":21348,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922233005,"pid":21348,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922233005,"pid":21348,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922296548,"pid":16724,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922296553,"pid":16724,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922296554,"pid":16724,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922299056,"pid":15432,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922299059,"pid":15432,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922299059,"pid":15432,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922312320,"pid":17488,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922312323,"pid":17488,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922312323,"pid":17488,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922317825,"pid":11640,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922317829,"pid":11640,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922317829,"pid":11640,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922321828,"pid":18800,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922321832,"pid":18800,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922321832,"pid":18800,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922336481,"pid":7244,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922336486,"pid":7244,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922336487,"pid":7244,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922344319,"pid":7244,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":59569},"msg":"incoming request"}
+{"level":30,"time":1724922344872,"pid":7244,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":200},"responseTime":551.968800008297,"msg":"request completed"}
+{"level":30,"time":1724922362766,"pid":7244,"hostname":"IQBAL-LAPTOP","reqId":"req-2","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":59569},"msg":"incoming request"}
+{"level":30,"time":1724922362771,"pid":7244,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":401},"responseTime":5.141000002622604,"msg":"request completed"}
+{"level":30,"time":1724922495590,"pid":10896,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922495594,"pid":10896,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922495594,"pid":10896,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922500294,"pid":19560,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922500297,"pid":19560,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922500298,"pid":19560,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922504461,"pid":7940,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922504465,"pid":7940,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922504466,"pid":7940,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922507797,"pid":2592,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922507801,"pid":2592,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922507802,"pid":2592,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922523469,"pid":2592,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":59676},"msg":"incoming request"}
+{"level":30,"time":1724922523485,"pid":2592,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":401},"responseTime":14.030200004577637,"msg":"request completed"}
+{"level":30,"time":1724922539330,"pid":2592,"hostname":"IQBAL-LAPTOP","reqId":"req-2","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":59676},"msg":"incoming request"}
+{"level":30,"time":1724922540092,"pid":2592,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":200},"responseTime":761.5261000096798,"msg":"request completed"}
+{"level":30,"time":1724922562116,"pid":10680,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922562119,"pid":10680,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922562119,"pid":10680,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922573902,"pid":10680,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":59724},"msg":"incoming request"}
+{"level":30,"time":1724922574502,"pid":10680,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":200},"responseTime":597.8830000013113,"msg":"request completed"}
+{"level":30,"time":1724922593843,"pid":11368,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922593848,"pid":11368,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922593849,"pid":11368,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922605033,"pid":13340,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922605037,"pid":13340,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922605037,"pid":13340,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922673058,"pid":17472,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922673064,"pid":17472,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922673064,"pid":17472,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922677667,"pid":13140,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922677670,"pid":13140,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922677671,"pid":13140,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922685421,"pid":10868,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922685429,"pid":10868,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922685430,"pid":10868,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922688229,"pid":20208,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922688233,"pid":20208,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922688233,"pid":20208,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922689260,"pid":20208,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":59785},"msg":"incoming request"}
+{"level":30,"time":1724922689685,"pid":20208,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":200},"responseTime":423.12899999320507,"msg":"request completed"}
+{"level":30,"time":1724922711089,"pid":20208,"hostname":"IQBAL-LAPTOP","reqId":"req-2","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":59785},"msg":"incoming request"}
+{"level":30,"time":1724922711095,"pid":20208,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":401},"responseTime":5.5033999979496,"msg":"request completed"}
+{"level":30,"time":1724922796082,"pid":8264,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922796087,"pid":8264,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922796088,"pid":8264,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922802474,"pid":14052,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922802477,"pid":14052,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922802478,"pid":14052,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922827052,"pid":11748,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922827057,"pid":11748,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922827057,"pid":11748,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922829888,"pid":18788,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://[::1]:8000"}
+{"level":30,"time":1724922829891,"pid":18788,"hostname":"IQBAL-LAPTOP","msg":"Server listening at http://127.0.0.1:8000"}
+{"level":30,"time":1724922829891,"pid":18788,"hostname":"IQBAL-LAPTOP","msg":"server listening on http://[::1]:8000"}
+{"level":30,"time":1724922926841,"pid":18788,"hostname":"IQBAL-LAPTOP","reqId":"req-1","req":{"method":"POST","url":"/api/admin/login","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":59936},"msg":"incoming request"}
+{"level":30,"time":1724922927454,"pid":18788,"hostname":"IQBAL-LAPTOP","reqId":"req-1","res":{"statusCode":200},"responseTime":611.7567999958992,"msg":"request completed"}
+{"level":30,"time":1724922942261,"pid":18788,"hostname":"IQBAL-LAPTOP","reqId":"req-2","req":{"method":"GET","url":"/api/students","hostname":"127.0.0.1:8000","remoteAddress":"127.0.0.1","remotePort":59936},"msg":"incoming request"}
+{"level":30,"time":1724922942266,"pid":18788,"hostname":"IQBAL-LAPTOP","reqId":"req-2","res":{"statusCode":401},"responseTime":4.428700000047684,"msg":"request completed"}

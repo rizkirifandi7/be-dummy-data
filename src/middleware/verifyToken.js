@@ -2,19 +2,19 @@ const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
 dotenv.config();
 
-const isAdmin = (req, res, next) => {
-	const token = req.cookies.tokenAdmin;
+const isAdmin = async (request, reply) => {
+	const token = request.cookies.tokenAdmin;
+	console.log("ini tokenya", token);
 	try {
 		if (!token) {
-			return res.status(401).json({ message: "Unauthorized" });
+			return reply.code(401).send({ message: "Unauthorized" });
 		}
 
 		const admin = jwt.verify(token, process.env.JWT_KEY);
-		req.admin = admin;
-		next();
+		request.admin = admin;
 	} catch (err) {
-		res.clearCookie("tokenAdmin", { httpOnly: true });
-		res.status(403).json({ message: "Forbidden" });
+		reply.clearCookie("tokenAdmin", { httpOnly: true });
+		return reply.code(403).send({ message: "Forbidden" });
 	}
 };
 
@@ -22,15 +22,16 @@ const isStudent = (req, res, next) => {
 	const token = req.cookies.tokenStudent;
 	try {
 		if (!token) {
-			return res.status(401).json({ message: "Unauthorized" });
+			return res.code(401).send({ message: "Unauthorized" });
 		}
 
-		const student = jwt.verify(token, process.env.JWT_KEY);
+		const tokens = token.split(" ")[1];
+		const student = jwt.verify(tokens, process.env.JWT_KEY);
 		req.student = student;
 		next();
 	} catch (err) {
 		res.clearCookie("tokenStudent", { httpOnly: true });
-		res.status(403).json({ message: "Forbidden" });
+		res.code(403).send({ message: "Forbidden" });
 	}
 };
 
@@ -38,15 +39,16 @@ const isManajement = (req, res, next) => {
 	const token = req.cookies.tokenManajement;
 	try {
 		if (!token) {
-			return res.status(401).json({ message: "Unauthorized" });
+			return res.code(401).send({ message: "Unauthorized" });
 		}
 
-		const manajement = jwt.verify(token, process.env.JWT_KEY);
+		const tokens = token.split(" ")[1];
+		const manajement = jwt.verify(tokens, process.env.JWT_KEY);
 		req.manajement = manajement;
 		next();
 	} catch (err) {
 		res.clearCookie("tokenManajement;", { httpOnly: true });
-		res.status(403).json({ message: "Forbidden" });
+		res.code(403).send({ message: "Forbidden" });
 	}
 };
 
@@ -69,9 +71,9 @@ const verifyUserType = (req, res, next) => {
 			jwt.verify(tokenManajement, process.env.JWT_KEY);
 		}
 
-		res.status(401).json({ message: "Unauthorized" });
+		res.code(401).send({ message: "Unauthorized" });
 	} catch (err) {
-		res.status(403).json({ message: "Forbidden" });
+		res.code(403).send({ message: "Forbidden" });
 	}
 };
 
