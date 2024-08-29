@@ -7,7 +7,7 @@ async function dailyReportRoutes(fastify, options){
     fastify.post("/dailyreport", dailyReportController.createDailyReport);
     fastify.put("/dailyreport/:id", dailyReportController.updateDailyReport);
     fastify.delete("/dailyreport/:id", dailyReportController.deleteDailyReport);
-    fastify.post("/dailyreport/student/:id", dailyReportController.createDailyReportByStudentId);
+    fastify.post("/dailyreport/student/", dailyReportController.createDailyReportByStudentId);
     fastify.put("/dailyreport/student/:id", dailyReportController.updateDailyReportByStudentId);
     fastify.delete("/dailyreport/student/:id", dailyReportController.deleteDailyReportByStudentId);
 }

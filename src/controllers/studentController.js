@@ -1,8 +1,14 @@
-const { Student } = require("../models");
+const { Student, DailyReport } = require("../models");
 
 const getAllStudent = async (req, reply) => {
 	try {
-		const student = await Student.findAll();
+		const student = await Student.findAll({
+			include: {
+				model: DailyReport,
+				as: "daily_reports",
+				attributes: ["id_student", "description", "time_submitted"],
+			},
+		});
 		reply.code(200).send({
 			data: student,
 		});

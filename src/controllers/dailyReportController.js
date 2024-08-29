@@ -40,7 +40,7 @@ const getDailyReportById = async (req, reply) => {
 
 const createDailyReport = async (req, reply) => {
     try {
-        const dailyReport = await DailyReport.create(req.body);
+        const dailyReport = await DailyReport.create({...req.body, id_account:Student.id}); 
         reply.code(201).send({
             data: dailyReport,
         });
@@ -110,7 +110,6 @@ const getDailyReportByStudentId = async (req, reply) => {
 const createDailyReportByStudentId = async (req, reply) => {
     try {
         const dailyReport = await DailyReport.create({
-            id_student: req.params.id,
             ...req.body,
         });
         reply.code(201).send({
